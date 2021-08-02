@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol UPsKitSegmentedUnitDelegate: class {
+protocol UPsKitSegmentedUnitDelegate: AnyObject {
   func didTap(_ upsSegmentUnit: UPsKitSegmentedUnit)
 }
 

@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol UPsKitSegmentedControlDataSource: class {
+protocol UPsKitSegmentedControlDataSource: AnyObject {
   func numberOfItems(_ upsSegmentView: UPsKitSegmentedControl) -> Int
   func upsSegmentView(_ upsSegmentView: UPsKitSegmentedControl, unitForItemAt row: Int) -> UPsKitSegmentedUnit
 }
 
-protocol UPsKitSegmentedControlDelegate: class {
+protocol UPsKitSegmentedControlDelegate: AnyObject {
   func cornerRadius(_ upsSegmentView: UPsKitSegmentedControl) -> CGFloat
   func inset(_ upsSegmentView: UPsKitSegmentedControl) -> UIEdgeInsets
   func lineSpacing(_ upsSegmentView: UPsKitSegmentedControl) -> CGFloat
